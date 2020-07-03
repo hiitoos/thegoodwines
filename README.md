@@ -14,6 +14,7 @@ git flow init -d # Solo se debe hacer la primera vez para inicializar el git flo
 git flow feature start <nombredelafeature>
 Ahora modificamos/creamos lo necesario para la feature
 git add .
+git commit
 git flow feature finish
 git push
 ````
