@@ -1,0 +1,50 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+main{
+  padding-top: 60px;
+  padding-left:50px;
+  padding-right:50px;
+}
+.team > img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Developers------------------------- */
+
+.developer-img {
+  width: 100%;
+}
+
+.developer-divider {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the developers headings */
+.developer-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS---------------------- */
+@media (min-width: 40em) {
+  .developer-heading {
+    font-size: 50px;
+  }
+  .developer-divider {
+    margin: 3.5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  .team > img{
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .developer-heading {
+    margin-top: 7rem;
+  }
+  .developer-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+}
