@@ -1,79 +1,72 @@
 body {
-    font-family: serif;
-    color: #202020;
+  font-family: serif;
+  color: #202020;
 }
 
-h1,
-h2 {
-    font-size: 2em;
-    text-transform: uppercase;
+h1, h2 {
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 /*CSS Para NAVBAR LOGO */
-.navbarLogo{
-    position: absolute; 
-    left: 50%; 
-    top: 10px; 
-    z-index: 3;
+
+.navbarLogo {
+  position: absolute;
+  top: -47px;
+  z-index: 3;
 }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 120%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .navbarLogo:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  /*FIN NAVBAR*/
 
-  /*Bola NAVBAR*/
-  #ball {
-    width: 70px;
-    height: 70px;
-    margin: 50px auto;
-    position: fixed;
-    left: 20%;
-    border-radius: 50%;
-    background: linear-gradient(
-      35deg,
-      #ccffff,
-      #ffcccc
-    );
-    animation-name: fade;
-    animation-duration: 3s;
-  }
+.logoIMG {
+  display: block;
+  width: 70%;
+  height: 75%;
+}
 
-  @keyframes fade {
-    50% {
-      left: 60%;
+/*FIN NAVBAR*/
 
-    }
+#copa {
+  width: 70px;
+  height: 70px;
+  margin: 50px auto;
+  position: absolute;
+  left: 0%;
+  border-radius: 50%;
+  animation-name: fadeCopa;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeCopa {
+  from {
+    margin-left: 0%;
+    opacity: 100%;
   }
-/*FIN BOLA*/
+  to {
+    margin-left: 50%;
+    transition-delay: 2s;
+    opacity: 0%;
+  }
+}
+
+#letras {
+  width: 50%;
+  height: 70px;
+  margin: 50px auto;
+  position: absolute;
+  left: 35%;
+  border-radius: 50%;
+  opacity: 0;
+  animation-name: fadeTexto;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeTexto {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
