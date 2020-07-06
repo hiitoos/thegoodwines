@@ -22,38 +22,7 @@ h1, h2 {
   height: 75%;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 120%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.navbarLogo:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 /*FIN NAVBAR*/
-
-/*Animacion COPA*/
 
 #copa {
   width: 70px;
@@ -74,7 +43,7 @@ h1, h2 {
   }
   to {
     margin-left: 50%;
-    transition-delay:2s;
+    transition-delay: 2s;
     opacity: 0%;
   }
 }
@@ -89,9 +58,8 @@ h1, h2 {
   opacity: 0;
   animation-name: fadeTexto;
   animation-duration: 5s;
-  animation-delay:2s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
-
 }
 
 @keyframes fadeTexto {
@@ -102,6 +70,3 @@ h1, h2 {
     opacity: 100%;
   }
 }
-
-
-/*FIN COPA*/
