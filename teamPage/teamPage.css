@@ -1,5 +1,4 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
+/* IN GENERAL */
 main{
   padding-top: 60px;
   padding-left:50px;
@@ -10,8 +9,7 @@ main{
   margin-bottom: 30px;
 }
 
-/* Developers------------------------- */
-
+/* Developers section*/
 .developer-img {
   width: 100%;
 }
@@ -27,7 +25,44 @@ main{
   letter-spacing: -.05rem;
 }
 
-/* RESPONSIVE CSS---------------------- */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.developer-flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 500px; /*Esto hay que mirarlo*/
+}
+
+/* This container is used to position the front and back side */
+.developer-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.developer-flip-card:hover .developer-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.developer-flip-card-front, .developer-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.developer-flip-card-back {
+  transform: rotateY(180deg);
+  background-color: white;
+}
+
+
+/* RESPONSIVE CSS */
 @media (min-width: 40em) {
   .developer-heading {
     font-size: 50px;
