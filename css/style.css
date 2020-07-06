@@ -8,3 +8,10 @@ h2 {
     font-size: 2em;
     text-transform: uppercase;
 }
+
+.navbar{
+    position: absolute; 
+    left: 50%; 
+    top: 10px; 
+    z-index: 3;
+}
