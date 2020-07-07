@@ -1,16 +1,12 @@
 /* IN GENERAL */
 main{
-  padding-top: 60px;
-  padding-left:50px;
-  padding-right:50px;
+  padding-top: 4em;
+  padding-left:3.5em;
+  padding-right:3.5em;
 }
 .team > img{
   width: 100%;
-  margin-bottom: 30px;
-}
-
-.divider {
-  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+  margin-bottom: 2em;
 }
 
 /* Developers section*/
@@ -21,6 +17,8 @@ main{
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .developer-card {
   perspective: 40 rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .developer-card-inner {
@@ -44,36 +42,12 @@ main{
 }
 
 .developer-img {
-  width: 100%;
-  max-width: 500px; /*A controlar*/
+  width: 80%;
 }
 
 /* Thin out the developers headings */
-.developer-heading {
+.developer-name {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
-}
-
-
-/* RESPONSIVE CSS */
-@media (min-width: 40em) {
-  .developer-heading {
-    font-size: 50px;
-  }
-  .developer-divider {
-    margin: 3.5rem 0; /* Space out the Bootstrap <hr> more */
-  }
-  .team > img{
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .developer-heading {
-    margin-top: 7rem;
-  }
-  .developer-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  }
 }
