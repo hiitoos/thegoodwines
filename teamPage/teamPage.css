@@ -9,13 +9,43 @@ main{
   margin-bottom: 30px;
 }
 
-/* Developers section*/
-.developer-img {
-  width: 100%;
+.divider {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
 }
 
-.developer-divider {
-  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+/* Developers section*/
+.developers{
+  display: grid;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.developer-card {
+  perspective: 40 rem;
+}
+
+.developer-card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.developer-card:hover .developer-card-inner {
+  transform: rotateY(180deg);
+}
+
+.developer-card-front, .developer-card-back {
+  backface-visibility: hidden;
+}
+
+.developer-card-back {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform: rotateY(180deg);
+  background-color: white;
+}
+
+.developer-img {
+  width: 100%;
+  max-width: 500px; /*A controlar*/
 }
 
 /* Thin out the developers headings */
@@ -23,42 +53,6 @@ main{
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
-}
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.developer-flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 500px; /*Esto hay que mirarlo*/
-}
-
-/* This container is used to position the front and back side */
-.developer-flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.developer-flip-card:hover .developer-flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.developer-flip-card-front, .developer-flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the back side */
-.developer-flip-card-back {
-  transform: rotateY(180deg);
-  background-color: white;
 }
 
 
