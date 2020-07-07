@@ -10,6 +10,25 @@ h1, h2 {
 
 /*CSS Para NAVBAR LOGO */
 
+#navBarBk{
+  background-color: rgb(255, 255, 255);
+}
+
+@font-face {
+  font-family: moonhouse;
+  src: url('../fonts/moonhouse.ttf')
+}
+
+#navBarLetters{
+  color: black;
+  font-family: moonhouse, "Courier New", Courier, monospace;
+  font-size: 1.33em;
+}
+
+#navBarLetters::first-letter{
+  color:orangered;
+}
+
 .navbarLogo {
   position: absolute;
   top: -47px;
@@ -58,7 +77,7 @@ h1, h2 {
   opacity: 0;
   animation-name: fadeTexto;
   animation-duration: 5s;
-  animation-delay: 2s;
+  animation-delay: 1.9s;
   animation-fill-mode: forwards;
 }
 
