@@ -90,7 +90,14 @@ h1, h2 {
   }
 }
 
-#career > img{
+#career1{
+  display: block;
   width: 100%;
-  margin-bottom: 2em;
+  height: 80%;
+}
+
+#career2{
+  display: block;
+  width: 100%;
+  height: 80%;
 }
