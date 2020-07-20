@@ -44,9 +44,9 @@ h1, h2 {
 /*FIN NAVBAR*/
 
 #zIzq {
-  width: 70px;
-  height: 70px;
-  margin: 50px auto;
+  width: 17em;
+  height: 17em;
+  margin: 50px;
   position: absolute;
   left: 0%;
   border-radius: 50%;
@@ -61,16 +61,16 @@ h1, h2 {
     opacity: 100%;
   }
   to {
-    margin-left: 49%;
+    margin-left: 43.29%;
     transition-delay: 2s;
     opacity: 100%;
   }
 }
 
 #zDer{
-    width: 70px;
-    height: 70px;
-    margin: 50px auto;
+    width: 17em;
+    height: 17em;
+    margin-top: 45px;
     position: absolute;
     right: 0%;
     border-radius: 50%;
@@ -85,7 +85,7 @@ h1, h2 {
       opacity: 100%;
     }
     to {
-      margin-right: 49%;
+      margin-right: 45%;
       transition-delay: 2s;
       opacity: 100%;
     }
