@@ -51,7 +51,7 @@ h1, h2 {
   left: 0%;
   border-radius: 50%;
   animation-name: fadeZizq;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -61,8 +61,8 @@ h1, h2 {
     opacity: 100%;
   }
   to {
-    margin-left: 43.29%;
-    transition-delay: 2s;
+    margin-left: 50%;
+    transition-delay: 3s;
     opacity: 100%;
   }
 }
@@ -70,12 +70,12 @@ h1, h2 {
 #zDer{
     width: 17em;
     height: 17em;
-    margin-top: 45px;
+    margin-top: 50px;
     position: absolute;
     right: 0%;
     border-radius: 50%;
     animation-name: fadeZder;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
   }
   
@@ -85,8 +85,8 @@ h1, h2 {
       opacity: 100%;
     }
     to {
-      margin-right: 45%;
-      transition-delay: 2s;
+      margin-right: 50%;
+      transition-delay: 3s;
       opacity: 100%;
     }
   }
