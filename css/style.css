@@ -90,14 +90,24 @@ h1, h2 {
     }
   }
 
-#career1{
-  display: block;
-  width: 100%;
-  height: 80%;
-}
-
-#career2{
-  display: block;
-  width: 100%;
-  height: 80%;
-}
+  .career{
+    border: 1px solid rgb(160, 179, 229);
+    width: 75%;
+    margin-top: 5%;
+  }
+  
+  #career1{
+    display: block;
+    width: 100%;
+    height: 85%;
+    margin-top: 5%;
+  }
+  
+  #career2{
+    display: block;
+    width: 110%;
+    height: 70%;
+    margin-left: -10%;
+    margin-top: 5%;
+  }
+  
